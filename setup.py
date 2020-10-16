@@ -24,6 +24,6 @@ setuptools.setup(
         'scipy',
         'scikit-video',
         'opencv-python',
-        ]
+        ],
     python_requires='>=3.6',
 )
