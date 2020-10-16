@@ -50,10 +50,10 @@ def norm(img, sigma=7 / 6):
 
 
 def niqe(image):
-    if img.ndim == 3:
+    if image.ndim == 3:
         img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     else:
-        img = img
+        img = image
     
     model_mat = scipy.io.loadmat(os.path.split(__file__)[0] + '/resources/mvg_params.mat')
     model_mu = model_mat['mean']
